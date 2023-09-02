@@ -1,0 +1,18 @@
+package com.ibm.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class QuotationDTO {
+
+    private String fromCurrencyCode;
+    private String toCurrencyCode;
+    private String cotacao;
+    private String dataHoraCotacao;
+}
