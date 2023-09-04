@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -32,7 +33,10 @@ public class SamsungAPIController {
     }
 
     @GetMapping("/list-documents")
-    public ResponseEntity<List<DocumentDTO>> listDocuments() {
-        return ResponseEntity.ok(samsungAPIService.listDocuments());
+    public ResponseEntity<List<DocumentDTO>> listDocuments(@RequestParam(value = "documentNumber", defaultValue = "") String documentNumber,
+                                                           @RequestParam(value = "currencyCode", defaultValue = "") String currencyCode,
+                                                           @RequestParam(value = "documentDateFrom", defaultValue = "") String documentDateFrom,
+                                                           @RequestParam(value = "documentDateTo", defaultValue = "") String documentDateTo) {
+        return ResponseEntity.ok(samsungAPIService.listDocuments(documentNumber, currencyCode, documentDateFrom, documentDateTo));
     }
 }
