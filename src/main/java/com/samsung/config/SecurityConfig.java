@@ -1,4 +1,4 @@
-package com.ibm.config;
+package com.samsung.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

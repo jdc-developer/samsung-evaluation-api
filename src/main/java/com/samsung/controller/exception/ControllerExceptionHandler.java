@@ -1,6 +1,6 @@
-package com.ibm.controller.exception;
+package com.samsung.controller.exception;
 
-import com.ibm.service.exception.RequestUnsuccessfulException;
+import com.samsung.service.exception.RequestUnsuccessfulException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

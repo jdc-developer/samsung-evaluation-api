@@ -1,4 +1,4 @@
-package com.ibm.service.exception;
+package com.samsung.service.exception;
 
 public class RequestUnsuccessfulException extends RuntimeException {
 

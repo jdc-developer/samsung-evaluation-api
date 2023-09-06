@@ -1,13 +1,12 @@
-package com.ibm.service;
+package com.samsung.service;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
 import com.google.gson.ToNumberPolicy;
-import com.ibm.dto.CurrencyDTO;
-import com.ibm.dto.DocumentDTO;
-import com.ibm.dto.QuotationDTO;
-import com.ibm.service.exception.RequestUnsuccessfulException;
+import com.samsung.dto.CurrencyDTO;
+import com.samsung.dto.DocumentDTO;
+import com.samsung.dto.QuotationDTO;
+import com.samsung.service.exception.RequestUnsuccessfulException;
 import org.apache.http.HttpStatus;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,16 +20,12 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
-
-import static java.util.Objects.isNull;
 
 @Service
 public class SamsungAPIService {

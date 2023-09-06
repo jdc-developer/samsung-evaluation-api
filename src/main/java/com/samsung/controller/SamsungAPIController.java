@@ -1,9 +1,9 @@
-package com.ibm.controller;
+package com.samsung.controller;
 
-import com.ibm.dto.CurrencyDTO;
-import com.ibm.dto.DocumentDTO;
-import com.ibm.dto.QuotationDTO;
-import com.ibm.service.SamsungAPIService;
+import com.samsung.dto.CurrencyDTO;
+import com.samsung.dto.DocumentDTO;
+import com.samsung.dto.QuotationDTO;
+import com.samsung.service.SamsungAPIService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

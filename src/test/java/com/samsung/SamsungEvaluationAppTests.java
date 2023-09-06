@@ -1,4 +1,4 @@
-package com.ibm;
+package com.samsung;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

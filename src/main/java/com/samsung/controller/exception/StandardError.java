@@ -1,4 +1,4 @@
-package com.ibm.controller.exception;
+package com.samsung.controller.exception;
 
 import java.io.Serializable;
 

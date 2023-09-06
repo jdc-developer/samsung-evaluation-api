@@ -1,4 +1,4 @@
-package com.ibm.dto;
+package com.samsung.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
